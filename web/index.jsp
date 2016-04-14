@@ -44,7 +44,7 @@
 			if (request.getParameter("submit") != null) {
 
 				if(request.getParameter("minimaalString") == null || request.getParameter("minimaalString").equals("")) {
-					minPrijs = 24000;
+					minPrijs = 0;
 				} else {
 					minPrijs = Integer.parseInt(request.getParameter("minimaalString"));
 				}
@@ -57,19 +57,15 @@
 
 				if (request.getParameter("autoMerken").equals("alle")) {
 
-					for (Auto auto: autos ) {
-						out.println(" <div class = 'plane'> ");
-						out.println("<h2 class = 'autoMerk' >" + auto.getMerk() + "  " + auto.getType() +  "</h2> <hr class = 'line'><img src = " + auto.getFoto()  + " class = 'foto'>");
-						out.println("<br><p class = 'prijs'> " + "&euro;" + auto.getPrijs() + "</p></div>");
-					}
-
-				}  else {
-
 					for (Auto auto: lijst.getMerkenMinMax(request.getParameter("autoMerken") , minPrijs, maxPrijs) ) {
 						out.println(" <div class = 'plane'> ");
 						out.println("<h2 class = 'autoMerk' >" + auto.getMerk() + "  " + auto.getType() +  "</h2> <hr class = 'line'><img src = " + auto.getFoto()  + " class = 'foto'>");
 						out.println("<br><p class = 'prijs'> " + "&euro;" + auto.getPrijs() + "</p></div>");   }
 				}
+
+				}  else {
+
+
 			}
 
 		%>

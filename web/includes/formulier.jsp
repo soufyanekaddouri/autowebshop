@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 
 <div class = "filteren">
-<form action = "index.jsp" method = "post">
+<form action = "index.jsp" method = "get">
 Minimum Prijs: <input type = "text"  name = "minimaalString" placeholder="minimale prijs">
 Maximum Prijs: <input type = "text"  name = "maximaalString" placeholder="maximale prijs">
 
