@@ -1,0 +1,40 @@
+.planes {
+	margin-left: 50%;
+	margin-right: auto;
+	width: 830px;
+}
+
+.plane {
+	width: 250px;
+	height: 150px;
+	background-color: gray;
+	border-radius: 10px;
+	margin: 5px;
+	border: 3px solid black;
+	display: inline-block;
+}
+
+.autoMerk {
+	margin-top: 0px;
+	margin-bottom: 12px;
+	font-size: 120%;
+	background-color: #007dff;
+	height: 25px;
+}
+
+.line {
+	margin-top: -12px;
+	background-color: black;
+	height: 2px;
+	border-color: black;
+}
+
+.foto {
+	margin-left: 0px;
+	width: 120px;
+	height: 75px;
+}
+
+.prijs {
+	top: -10px;
+}

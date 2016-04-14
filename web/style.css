@@ -1,0 +1,31 @@
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+section {
+	margin-top: 20px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+.filteren {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #00abff;
+	padding: 20px;	
+	border: 3px solid black;
+	border-radius: 10px;
+	color: white;
+}
+
+.space {
+	height: 10px;
+}
+
